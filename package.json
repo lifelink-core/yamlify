@@ -9,8 +9,8 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "js-yaml": "~3.0.2",
-    "through": "~2.3.4"
+    "js-yaml": "^4.0.0",
+    "through": "^2.3.8"
   },
   "devDependencies": {},
   "keywords": [
