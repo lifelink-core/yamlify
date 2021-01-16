@@ -1,8 +1,8 @@
 var fs   = require('fs');
-var yaml = require('node-yaml');
+var yaml = require('js-yaml');
 
 var yamlRequire = function (m, f) {
-  m.exports = yaml.readSync(f);
+  m.exports = yaml.load(fs.readFileSync(f));
 };
 
 // Hack to prevent later changes of .yml, .yaml extensions handlers
